@@ -1,0 +1,113 @@
+/* Общи стилове */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Хедър */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #111;
+    border-bottom: 1px solid #444;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #888;
+}
+
+/* Биография */
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background: #111;
+    border-bottom: 1px solid #444;
+}
+
+.bio-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-container img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.bio-text {
+    max-width: 600px;
+}
+
+.bio-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.bio-text p {
+    color: #aaa;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Галерия */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.gallery-container img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Футър */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #888;
+    border-top: 1px solid #444;
+}
